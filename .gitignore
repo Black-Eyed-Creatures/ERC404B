@@ -1,0 +1,14 @@
+.vscode
+node_modules
+package-lock.json
+.DS_Store
+.env
+.history
+dist
+tmp
+abi
+contract_addresses*.json
+
+#Hardhat files
+cache
+artifacts
