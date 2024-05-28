@@ -1,7 +1,7 @@
 {
-  "name": "bec-smartcontract",
+  "name": "erc404b",
   "version": "1.0.0",
-  "description": "Black Eyed Creatures Smart Contract",
+  "description": "ERC404B Smart Contract",
   "author": "42i",
   "license": "MIT",
   "homepage": "https://github.com/42i-co/bec-smartcontract#readme",

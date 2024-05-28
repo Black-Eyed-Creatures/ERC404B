@@ -1,4 +1,4 @@
-// contracts/erc404/ERC404B.sol
+// contracts/ERC404B.sol
 // SPDX-License-Identifier: MIT
 
 /**

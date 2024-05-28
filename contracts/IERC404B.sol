@@ -1,4 +1,4 @@
-// contracts/erc404/IERC404B.sol
+// contracts/IERC404B.sol
 // SPDX-License-Identifier: MIT
 
 /**

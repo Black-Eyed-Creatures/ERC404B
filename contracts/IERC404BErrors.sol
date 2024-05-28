@@ -1,4 +1,4 @@
-// contracts/erc404/IERC404BErrors.sol
+// contracts/IERC404BErrors.sol
 // SPDX-License-Identifier: MIT
 
 /**
