@@ -6,7 +6,7 @@ require("hardhat-abi-exporter");
 require("hardhat-gas-reporter");
 require("hardhat-contract-sizer");
 require("@nomicfoundation/hardhat-verify");
-require('solidity-coverage')
+require('solidity-coverage');
 
 
 const privateKey = process.env.PRIVATE_KEY || "0000000000000000000000000000000000000000000000000000000000000001";
@@ -46,10 +46,6 @@ module.exports = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
-      blockGasLimit: 800000000,
-      accounts: {
-        count: 200,
-      }
     },
     mainnet: {
       blockGasLimit: 30000000,
@@ -66,8 +62,5 @@ module.exports = {
       url: process.env.WEB3_RPC_URL,
       accounts: [`0x${privateKey}`],
     },
-  },
-  mocha: {
-    timeout: 100000000
   },
 };
