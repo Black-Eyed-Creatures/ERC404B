@@ -4,15 +4,12 @@
   "description": "ERC404B Smart Contract",
   "author": "42i",
   "license": "MIT",
-  "homepage": "https://github.com/42i-co/bec-smartcontract#readme",
+  "homepage": "https://github.com/Black-Eyed-Creatures/ERC404B#readme",
   "scripts": {
-    "console": "./node_modules/.bin/hardhat console",
-    "test": "./node_modules/.bin/hardhat test",
-    "coverage": "./node_modules/.bin/hardhat coverage",
-    "compile": "./node_modules/.bin/hardhat compile",
-    "export-abi": "./node_modules/.bin/hardhat export-abi",
-    "size-contracts": "./node_modules/.bin/hardhat size-contracts",
-    "node": "./node_modules/.bin/hardhat node --watch"
+    "console": "hardhat console",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "compile": "hardhat compile"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
