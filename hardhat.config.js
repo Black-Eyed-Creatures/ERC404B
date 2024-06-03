@@ -55,17 +55,17 @@ module.exports = {
     },
     mainnet: {
       blockGasLimit: 30000000,
-      url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY_TOKEN}`,
+      url: process.env.WEB3_RPC_URL,
       accounts: [`0x${privateKey}`],
     },
     polygon: {
       blockGasLimit: 30000000,
-      url: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_TOKEN}`,
+      url: process.env.WEB3_RPC_URL,
       accounts: [`0x${privateKey}`],
     },
     sepolia: {
       blockGasLimit: 30000000,
-      url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.ALCHEMY_TOKEN}`,
+      url: process.env.WEB3_RPC_URL,
       accounts: [`0x${privateKey}`],
     },
   },
