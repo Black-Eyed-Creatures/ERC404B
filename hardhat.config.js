@@ -33,13 +33,19 @@ module.exports = {
     only: [],
     spacing: 2,
   },
-  etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
-  },
+  ...(
+    process.env.ETHERSCAN_API_KEY
+      ? {
+        etherscan: {
+          apiKey: process.env.ETHERSCAN_API_KEY
+        }
+      }
+      : {}
+  ),
   gasReporter: {
     gasPrice: 6,
-    coinmarketcap: process.env.COINMARKETCAP_API_KEY,
     currency: "USD",
+    ...(process.env.COINMARKETCAP_API_KEY ? { coinmarketcap: process.env.COINMARKETCAP_API_KEY } : {}),
   },
   contractSizer: {
     runOnCompile: true,
