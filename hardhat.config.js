@@ -6,6 +6,7 @@ require("hardhat-abi-exporter");
 require("hardhat-gas-reporter");
 require("hardhat-contract-sizer");
 require("@nomicfoundation/hardhat-verify");
+require('solidity-coverage')
 
 
 const privateKey = process.env.PRIVATE_KEY || "0000000000000000000000000000000000000000000000000000000000000001";
@@ -33,15 +34,6 @@ module.exports = {
     only: [],
     spacing: 2,
   },
-  ...(
-    process.env.ETHERSCAN_API_KEY
-      ? {
-        etherscan: {
-          apiKey: process.env.ETHERSCAN_API_KEY
-        }
-      }
-      : {}
-  ),
   gasReporter: {
     gasPrice: 6,
     currency: "USD",

@@ -9,6 +9,10 @@ tmp
 abi
 contract_addresses*.json
 
-#Hardhat files
+# Hardhat files
 cache
 artifacts
+
+# solidity-coverage files
+coverage.json
+coverage/
